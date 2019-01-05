@@ -1,0 +1,57 @@
+/**
+    Some magic that isn't part of the demo
+*/
+body {
+    margin: 0;
+}
+
+/**
+    Navigation section
+*/
+nav {
+    background-color: #388E3C
+    ;
+    padding: 5px;
+}
+
+nav .logo {
+    font-size: 2em;
+    color: white;
+}
+
+/** 
+    Main section
+*/
+main {
+    text-align: center;
+}
+
+.leader-section {
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.team-row {
+    padding-top: 10px;
+}
+
+.team-member-container {
+    width: 30vw;
+    display: inline-block;
+}
+
+/**
+    Avatar section
+*/
+.avatar { 
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+}
+
+.avatar-description {
+    max-width: 160px;
+    display: inline-block;
+}
+
