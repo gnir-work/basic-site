@@ -9,13 +9,13 @@ body {
     Navigation section
 */
 nav {
-    background-color: #388E3C
-    ;
+    background-color: #388E3C;
     padding: 5px;
+    padding-left: 10px; /** This works because of the cascading feature in CSS */
 }
 
 nav .logo {
-    font-size: 2em;
+    font-size: 2em; /** em -> 1 em is the size of the current font */
     color: white;
 }
 
@@ -36,7 +36,7 @@ main {
 }
 
 .team-member-container {
-    width: 30vw;
+    width: 30vw; /** vw -> the width of the view port (which is basically the width of the screen) */
     display: inline-block;
 }
 
@@ -47,7 +47,7 @@ main {
     width: 100px;
     height: 100px;
 
-    border-radius: 50%;
+    border-radius: 50%; /** border-radius -> is used in order to make DOM elements round */
 }
 
 .avatar-description {

@@ -1,9 +1,17 @@
+const FEMALE_AVATAR_SRC = "resources/female-avatar.jpg";
+const MALE_AVATAR_SRC = "resources/male-avatar.jpg";
+
+
 /**
- * Change the img to a female avatar.
- * @param {img dom element} ele 
+ * At 50 50 change change the gender of the avatar.
+ * @param {img dom element} element 
  */
-function toFemale(ele) {
-    ele.src = "resources/female-avatar.jpg";
+function changeGender(element) {
+    if (Math.random() > 0.5) {
+        element.src = FEMALE_AVATAR_SRC;
+    } else {
+        element.src = MALE_AVATAR_SRC;
+    }
 }
 
 
@@ -11,9 +19,9 @@ function toFemale(ele) {
  * Fallback in case we have to much time.
  */
 function setOnClicks() {
-    var test = document.getElementsByClassName('avatar');
-    for (let i = 0; i < test.length; i ++) {
-        test[i].onclick = () => toFemale(test[i]);
+    var avatar = document.getElementsByClassName('avatar');
+    for (let i = 0; i < avatar.length; i ++) {
+        avatar[i].onclick = () => changeGender(avatar[i]);
     }
 }
 
